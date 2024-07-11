@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>sum of two number</title>
+    <script>
+        function sum(){
+            var a=document.getElementById("t1").value;
+            var b=document.getElementById("t2").value;
+            var c=(parseInt(a)+parseInt(b));
+             document.getElementById("ans").value=c;
+             document.getElementById("result").innertext=c;
+             document.getElementById("result").innerhtml="<b>"+c+"</b>";
+             return false;
+        }
+    </script>
+</head>
+<body>
+    <div class="container">
+        <input type="text" id="t1"/>
+        <input type="text" id="t2"/>
+        <button class="btn btn-info my-3" onclick="sum()">Sum</button>
+        
+    </div>
+    <div id="result"></div>
+    <input type="test" id="ans">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
